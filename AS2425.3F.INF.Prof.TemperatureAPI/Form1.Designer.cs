@@ -34,6 +34,8 @@
             btnGetWeather = new Button();
             lblTemperatura = new Label();
             label2 = new Label();
+            picImage = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picImage).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -91,11 +93,21 @@
             label2.TabIndex = 5;
             label2.Text = "JSon";
             // 
+            // picImage
+            // 
+            picImage.Location = new Point(666, 58);
+            picImage.Name = "picImage";
+            picImage.Size = new Size(56, 54);
+            picImage.SizeMode = PictureBoxSizeMode.StretchImage;
+            picImage.TabIndex = 6;
+            picImage.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(picImage);
             Controls.Add(label2);
             Controls.Add(lblTemperatura);
             Controls.Add(btnGetWeather);
@@ -104,6 +116,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Prof;Lab. 2.11DV;07/04/25; Temperature from wttr.in Weather API";
+            ((System.ComponentModel.ISupportInitialize)picImage).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -116,5 +129,6 @@
         private Button btnGetWeather;
         private Label lblTemperatura;
         private Label label2;
+        private PictureBox picImage;
     }
 }
