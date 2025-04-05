@@ -103,7 +103,7 @@
             Controls.Add(txtCity);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Prof;Lab. 2.11DV;07/04/25; Temperature from OpenWeather";
+            Text = "Prof;Lab. 2.11DV;07/04/25; Temperature from wttr.in Weather API";
             ResumeLayout(false);
             PerformLayout();
         }

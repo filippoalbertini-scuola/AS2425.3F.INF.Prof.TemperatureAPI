@@ -9,6 +9,11 @@ namespace AS2425._3F.INF.Prof.TemperatureAPI
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Get temperature from https://wttr.in/ public weather API
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void btnGetWeather_Click(object sender, EventArgs e)
         {
             string city = txtCity.Text.Trim();
